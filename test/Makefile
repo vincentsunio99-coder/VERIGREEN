@@ -6,7 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = https://vga-playground.com/?repo=https%3A%2F%2Fgithub.com%2Falexandercoabad%2FABC_123_MatrixDisplay&fbclid=IwY2xjawRejZhleHRuA2FlbQIxMABicmlkETFHZ0pCU2Y0eWZwWWxpU2Juc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHnZlH5QBq9R86FeGkgaaLFd3hf1AMgCQIxR5Y5_aHzQMu_oEG-Ue7Ke7cyiz_aem_GYqugYQL_YdPFBjcIztCZA
 
 ifneq ($(GATES),yes)
 
@@ -14,7 +14,7 @@ ifneq ($(GATES),yes)
 SIM_BUILD				= sim_build/rtl
 VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES))
 
-if else
+else
 
 # Gate level simulation:
 SIM_BUILD				= sim_build/gl
