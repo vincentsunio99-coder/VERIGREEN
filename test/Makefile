@@ -14,7 +14,7 @@ ifneq ($(GATES),yes)
 SIM_BUILD				= sim_build/rtl
 VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES))
 
-else
+if else
 
 # Gate level simulation:
 SIM_BUILD				= sim_build/gl
